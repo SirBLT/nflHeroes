@@ -1,0 +1,6 @@
+<h1 class="teamHeader">Teams</h1>
+<br><hr>
+<div ng-repeat="team in teams" class="teamLi">
+  <div><a id="aLink" ui-sref="eachTeam({team: team.Team, teamName:team.Team_name})">{{team.Team_name}}</a></div>
+  <div>{{team.arrest_count}}</div>
+</div>

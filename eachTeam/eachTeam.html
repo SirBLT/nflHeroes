@@ -1,0 +1,7 @@
+<h1 class="etHeader"> {{teamName}} </h1>
+<br><hr>
+
+<div ng-repeat="player in players">
+  <a ui-sref="playerStats({player: player.Name})"><p class="eachTeamLi">{{player.Name}}</p></a>
+  <p class="eachTeamLi">{{player.arrest_count}}</p>
+</div>
