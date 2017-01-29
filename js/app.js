@@ -7,22 +7,22 @@ angular.module("nflArrestApp", ['ui.router'])
     .state('home', {
         url: '/',
         controller: 'footballCtrl',
-        templateUrl: 'home/home.html'
+        templateUrl: 'views/home.html'
     })
     .state('teams', {
         url: '/teams',
         controller: 'teamsCtrl',
-        templateUrl: 'teams/teams.html'
+        templateUrl: 'views/teams.html'
     })
     .state('eachTeam', {
         url: '/eachTeam/:team/:teamName',
         controller: 'eachTeamCtrl',
-        templateUrl: 'eachTeam/eachTeam.html'
+        templateUrl: 'views/eachTeam.html'
         })
     .state('playerStats', {
         url: '/playerStats/:player',
         controller: 'playerStatsCtrl',
-        templateUrl: 'playerStats/playerStats.html'
+        templateUrl: 'views/playerStats.html'
     })
 
 
