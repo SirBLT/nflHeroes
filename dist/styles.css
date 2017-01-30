@@ -1,52 +1,185 @@
-h2 {
-	font-size: 3em;
-	text-align: center;
-	background-color: black;
-	color: white;
-}
-.inputDiv {
-	height: 150px;
-	background-color: black;
-	text-align: center;
-}
-img.first {
-	position: absolute;
-	left: 0;
-	height: 150px;
-	width: 150px;
-}
-img.second {
-	position: absolute;
-	right: 0;
-	height: 150px;
-	width: 150px;
-}
-input {
-	width: 300px;
-	text-align: center;
-}
+#aLink {
+  color: black;
+  text-decoration: none; }
 
 .headerColumn {
-	font-size: 2em;
-	font-family: cursive;
-    color: black;
-	text-decoration: underline;
-	text-align: center;
-	float: left;
-	width: 33%;
-	font-weight: bold;
-	display: inline-block;
-}
+  color: black; }
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  animation: bTow 5s; }
+
+@keyframes bTow {
+  0% {
+    color: black; }
+  100% {
+    color: white; } }
+
+.inputDiv {
+  height: 150px;
+  background-color: black;
+  text-align: center; }
+
+img.first {
+  position: absolute;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  animation: rTl 5s; }
+
+@keyframes rTl {
+  0% {
+    left: 100%; }
+  100% {
+    left: 0%; } }
+
+img.second {
+  position: absolute;
+  right: 0;
+  height: 150px;
+  width: 150px;
+  animation: lTr 5s; }
+
+@keyframes lTr {
+  0% {
+    right: 100%; }
+  100% {
+    right: 0%; } }
+
+input {
+  width: 300px;
+  text-align: center; }
+
+.headerColumn {
+  font-size: 2.5em;
+  font-family: cursive;
+  text-decoration: underline;
+  text-align: center;
+  float: left;
+  width: 33%;
+  font-weight: bold;
+  display: inline-block; }
 
 .column {
-	border-right: 1px solid black;
-	border-left: 1px solid black;
-	font-size: 1.3em;
-	font-family: cursive;
-	text-align: center;
-	float: left;
-	line-height: 2em;
-	width: 32%;
-	display: inline-block;
-}
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  font-size: 2em;
+  font-family: cursive;
+  text-align: center;
+  float: left;
+  line-height: 2em;
+  width: 32.6%;
+  display: inline-block; }
+
+img.imgNFL {
+  width: 100%;
+  height: 250px;
+  animation: stretch 3s; }
+
+@keyframes stretch {
+  0% {
+    height: 25px;
+    width: 20%; }
+  100% {
+    height: 250px;
+    width: 100%; } }
+
+img.oj {
+  width: 100%;
+  height: 250px;
+  animation: appear 3s; }
+
+#ojHead {
+  animation: drop 3s; }
+
+@keyframes drop {
+  0% {
+    height: 0px; }
+  100% {
+    height: 100px; } }
+
+img.mj {
+  width: 100%;
+  height: 250px;
+  animation: lToR 3s; }
+
+@keyframes lToR {
+  0% {
+    width: 1%; }
+  100% {
+    width: 100%; } }
+
+.Header {
+  font-size: 4.5em;
+  font-family: cursive;
+  text-align: center;
+  color: black;
+  height: 100px; }
+
+.divOne {
+  color: blackFont;
+  font-size: 3.5em;
+  font-family: cursive;
+  text-decoration: underline;
+  text-align: center;
+  float: left;
+  width: 50%;
+  font-weight: bolder;
+  display: inline-block; }
+
+.divTwo {
+  clear: both;
+  -webkit-column-count: 2;
+  column-count: 2;
+  color: blackFont;
+  font-size: 2.5em;
+  text-align: center;
+  -webkit-column-rule: 2px solid darkgray;
+  column-rule: 2px solid darkgray;
+  font-family: cursive;
+  line-height: 2em; }
+
+#myDIV {
+  width: 400px;
+  height: 100px;
+  -webkit-animation: mymove 5s;
+  /* Chrome, Safari, Opera */
+  animation: mymove 3s;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  50% {
+    font-size: 40px; } }
+
+/* Standard syntax */
+@keyframes mymove {
+  50% {
+    font-size: 40px; } }
+
+#finH {
+  animation: appear 3s; }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.column {
+  animation: appear 5s; }
+
+.psPara {
+  animation: grow 3s; }
+
+@keyframes grow {
+  0% {
+    font-size: 0%; }
+  100% {
+    font-size: 100%; } }
+
 /*# sourceMappingURL=maps/styles.css.map */

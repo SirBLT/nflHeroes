@@ -1,6 +1,13 @@
-<h1 class="teamHeader">Teams</h1>
-<br><hr>
-<div ng-repeat="team in teams" class="teamLi">
-  <div><a id="aLink" ui-sref="eachTeam({team: team.Team, teamName:team.Team_name})">{{team.Team_name}}</a></div>
-  <div>{{team.arrest_count}}</div>
+<div class="tpHeaderDiv">
+<img class="imgNFL" src="nflRoughness.png">
+<h1 id="myDIV" class="Header">Teams</h1>
+</div>
+<div class="thDiv">
+  <div class="divOne">Team Name</div>
+  <div class="divOne">Charges Per Team</div>
+</div>
+
+<div ng-repeat="team in teams" class="divTwo">
+  <div class="noDiv"><a id="aLink" ui-sref="eachTeam({team: team.Team, teamName:team.Team_name})">{{team.Team_name}}</a></div>
+  <div class="noDiv">{{team.arrest_count}}</div>
 </div>

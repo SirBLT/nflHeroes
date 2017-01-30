@@ -1,7 +1,13 @@
-<h1 class="etHeader"> {{teamName}} </h1>
-<br><hr>
+<div class=etHD>
+<img class="oj" src="ojSimpson.jpg">
+<h1 id="ojHead" class="Header"> {{teamName}} </h1>
+</div>
+<div class="etHrow">
+<div class="divOne">Player Name</div>
+<div class="divOne">Crime Count</div>
+</div>
 
-<div ng-repeat="player in players">
-  <a ui-sref="playerStats({player: player.Name})"><p class="eachTeamLi">{{player.Name}}</p></a>
-  <p class="eachTeamLi">{{player.arrest_count}}</p>
+<div ng-repeat="player in players" class="divTwo">
+  <a id="aLink" ui-sref="playerStats({player: player.Name})"><div>{{player.Name}}</div></a>
+  <div>{{player.arrest_count}}</div>
 </div>

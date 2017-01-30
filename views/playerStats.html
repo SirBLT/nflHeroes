@@ -1,0 +1,13 @@
+<div class="finalH">
+<img class="mj" src="mjMugshot.png">
+<h1 id="finH" class="Header"> {{playerTitle}} </h1>
+</div>
+<div class="noUse">
+    <div class="divOne">Criminal Offense</div>
+    <div class="divOne">Mistake Made </div>
+</div>
+
+<div class="divTwo" ng-repeat="tPlay in teamPlayer">
+    <div class="psPara">{{tPlay.Category}} </div>
+    <div class="psPara">{{tPlay.arrest_count}} x</div>
+</div>
