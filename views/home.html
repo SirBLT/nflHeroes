@@ -7,9 +7,10 @@
 		</div>
 		<div class="headerRow">
 			<div class="headerColumn">Role Model Name</div>
-            <a ui-sref="teams"><div id="teamButton" class="headerColumn">Click For Team View</div></a>
+            <a ui-sref="teams"><div id="teamButton" class="headerColumn">Team</div></a>
 			<div class="headerColumn">Trips to the Clink</div>
 		</div>
+    
 
 		<div ng-repeat="player in players | filter: nflFilter">
 			<div class="column"> {{player.Name}} </div>

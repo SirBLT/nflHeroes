@@ -1,7 +1,14 @@
 #aLink {
-  color: black;
-  text-decoration: none; }
-
+  color: red;
+  text-decoration: underline;
+}
+#aLink:hover {
+  color: blue;
+  font-size: 1.3em;
+}
+#teamButton {
+  color: #017E9D;
+}
 #teamButton:hover {
   color: blue;
 }

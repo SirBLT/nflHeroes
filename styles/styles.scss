@@ -5,8 +5,14 @@ $headerSize: 4.5em;
 $divSize: 2.5em;
 $blackFont: black;
 
+#teamButton {
+  color: red;
+}
+#teamButton:hover {
+  color: blue;
+}
 #aLink {
-    color: $blackFont;
+    color: #017E9D;
     text-decoration: none;
 
 }
@@ -146,7 +152,7 @@ img.mj {
     text-align: center;
     color: $blackFont;
     height: 100px;
-    
+
 
 }
 .divOne {
@@ -176,7 +182,7 @@ img.mj {
 
 }
 #myDIV {
-    
+
     width: 400px;
     height: 100px;
     -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
