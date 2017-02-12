@@ -1,13 +1,12 @@
 #aLink {
-  color: red;
+  color: black;
   text-decoration: underline;
 }
 #aLink:hover {
   color: blue;
-  font-size: 1.3em;
 }
 #teamButton {
-  color: #017E9D;
+  color: black;
 }
 #teamButton:hover {
   color: blue;
@@ -184,7 +183,7 @@ img.mj {
   animation: appear 5s; }
 
 .psPara {
-  animation: grow 3s; }
+  animation: appear 3s; }
 
 @keyframes grow {
   0% {

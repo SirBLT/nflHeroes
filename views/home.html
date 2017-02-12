@@ -10,10 +10,10 @@
             <a ui-sref="teams"><div id="teamButton" class="headerColumn">Team</div></a>
 			<div class="headerColumn">Trips to the Clink</div>
 		</div>
-    
+
 
 		<div ng-repeat="player in players | filter: nflFilter">
-			<div class="column"> {{player.Name}} </div>
-			<div class="column"> {{player.Team_name}} </div>
-			<div class="column"> {{player.arrest_count}} </div>
+      <a id="aLink" ui-sref="playerStats({player: player.Name})"><div class="column">{{player.Name}}</div></a>
+      <a id="aLink" ui-sref="eachTeam({team: player.Team, teamName:player.Team_name})"><div class="column">{{player.Team_name}}</div></a>
+  		<div class="column"> {{player.arrest_count}} </div>
 		</div>

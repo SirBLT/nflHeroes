@@ -6,13 +6,13 @@ $divSize: 2.5em;
 $blackFont: black;
 
 #teamButton {
-  color: red;
+  color: black;
 }
 #teamButton:hover {
   color: blue;
 }
 #aLink {
-    color: #017E9D;
+    color: $blackFont;
     text-decoration: none;
 
 }
