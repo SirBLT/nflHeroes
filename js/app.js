@@ -1,8 +1,8 @@
-angular.module("nflArrestApp", ['ui.router'])
+var app = angular.module("nflArrestApp", ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider){
-    
+
     $urlRouterProvider.otherwise('/')
-    
+
     $stateProvider
     .state('home', {
         url: '/',

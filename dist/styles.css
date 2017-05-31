@@ -1,18 +1,23 @@
+#teamButton {
+  color: black; }
+
+#teamButton:hover {
+  color: blue; }
+
 #aLink {
   color: black;
-  text-decoration: underline;
-}
+  text-decoration: none; }
+
 #aLink:hover {
-  color: blue;
-}
-#teamButton {
-  color: black;
-}
-#teamButton:hover {
-  color: blue;
-}
+  color: blue; }
+
 .headerColumn {
   color: black; }
+
+.searchBar {
+  height: 25px;
+  font-size: 1em;
+  font-family: cursive; }
 
 h2 {
   font-size: 3em;
@@ -86,7 +91,7 @@ input {
 img.imgNFL {
   width: 100%;
   height: 250px;
-  animation: stretch 3s; }
+  animation: appear 3s; }
 
 @keyframes stretch {
   0% {
@@ -106,7 +111,7 @@ img.oj {
 
 @keyframes drop {
   0% {
-    height: 0px; }
+    height: 400px; }
   100% {
     height: 100px; } }
 
@@ -163,12 +168,12 @@ img.mj {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
   50% {
-    font-size: 40px; } }
+    font-size: 0px; } }
 
 /* Standard syntax */
 @keyframes mymove {
   50% {
-    font-size: 40px; } }
+    font-size: 0px; } }
 
 #finH {
   animation: appear 3s; }
@@ -183,7 +188,7 @@ img.mj {
   animation: appear 5s; }
 
 .psPara {
-  animation: appear 3s; }
+  animation: grow 3s; }
 
 @keyframes grow {
   0% {
